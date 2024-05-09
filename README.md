@@ -6,6 +6,13 @@ Node version 20.x and it should be less than 21
 
 To run this Nest.js application, follow these steps:
 
+Create .env file and add below variable
+
+DATABASE_URL="postgresql://postgres:123@localhost:5434/nest?schema=public"
+JWT_SECRET="super-secret"
+
+Once your app is running on localhost navigate to /api for Swagger documentation
+
 1. **Install Dependencies**: Run `npm install` to install all the dependencies listed in the `package.json` file.
 
 2. **Set up Environment Variables**: Ensure you have the necessary environment variables set up. Create a `.env` file with the required variables or adjust existing environment files (`e.g., .env.test`).
